@@ -1,5 +1,7 @@
 # modelagem-banco-de-dados
-Cardinalidade
+
+## Cardinalidade
+
 A cardinalidade em um modelo de banco de dados descreve o número de entidades filhas que estão relacionadas a uma única entidade pai em uma relação. Existem três tipos principais de cardinalidade:
 
 Um para Um (1:1): Cada entidade em uma tabela está associada a no máximo uma entidade na outra tabela e vice-versa.
@@ -8,15 +10,15 @@ Um para Muitos (1:N): Cada entidade em uma tabela pode estar associada a várias
 
 Muitos para Muitos (N:N): Cada entidade em uma tabela pode estar associada a várias entidades na outra tabela e vice-versa.
 
-Chaves Primárias e Estrangeiras
+## Chaves Primárias e Estrangeiras
 As chaves primárias e estrangeiras são usadas para estabelecer e manter essas relações entre tabelas em um banco de dados relacional. Aqui está uma explicação de como elas são usadas no arquivo fornecido:
 
 Chave Primária (Primary Key): Uma chave primária é uma coluna ou conjunto de colunas que identifica de forma exclusiva cada registro em uma tabela. Ela garante que não haja duplicatas e permite acesso rápido aos dados. No arquivo fornecido, a chave primária é identificada pela cláusula PRIMARY KEY.
 
 Chave Estrangeira (Foreign Key): Uma chave estrangeira é uma coluna ou conjunto de colunas em uma tabela que estabelece uma relação com a chave primária de outra tabela. Ela cria um vínculo entre as duas tabelas e é usada para garantir a integridade referencial dos dados. No arquivo fornecido, as chaves estrangeiras são identificadas pela cláusula FOREIGN KEY, que especifica a relação entre as tabelas e as colunas envolvidas.
 
-Relações no Arquivo Fornecido
-No arquivo fornecido, várias tabelas são definidas juntamente com suas chaves primárias e estrangeiras. Aqui está um resumo das relações entre as tabelas:
+## Relações a imagem
+Na imagem acima, várias tabelas são definidas juntamente com suas chaves primárias e estrangeiras. Aqui está um resumo das relações entre as tabelas:
 
 game e group: A tabela game possui uma chave estrangeira group_id, que se relaciona com a chave primária id da tabela group. Isso sugere uma relação de um para muitos, onde um jogo pode pertencer a apenas um grupo, mas um grupo pode ter vários jogos.
 
